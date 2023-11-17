@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu:</h1>
+        <form name="kayit" action="kayit.php" method="get">
+           <table border="1">
+            <tr>
+                <td>Adı:</td>
+                <td><input type="text" name="adsoyad" required autofocus></td>
+            </tr>
+            <tr>
+                <td>Soyadı:</td>
+                <td><input type="text" name="soyadi" required></td>
+            </tr>
+            </tr>
+           </table>
+           <form name="sevdigispor">
+            <input type="checkbox" name="spor" checked> Futbol
+            <input type="checkbox" name="spor"> Basketbol
+            <input type="checkbox" name="spor" checked> Voleybol
+            <br>
+            
+        </form>
+           <form name="secenek">
+            <input type="radio" name="cinsiyet" value="Erkek" checked>Erkek
+            <input type="radio" name="cinsiyet" value="Kadin">Kadın
+            <br>
+            
+        </form>
+
+        </form>
+        <table border="1">
+            <tr>
+                <td>Yaş:</td>
+                <td><input type="number"></td>
+
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+        </table>
+        <form>
+            <h2>Doğum Yeri:</h2>
+            <select name="dyeri" id="dyeri">
+                <option selected>Van</option>
+                <option>Adana</option>
+                <option>Antalya</option>
+                <option>İzmir</option>
+                <option>İstanbul</option>
+                <option>Ankara</option>
+            </select>
+            <br>
+            <br>
+        </form>
+        <input type="submit" value="Gönder">
+            <input type="reset" value="Temizle">
+    </body>
+</html>
